@@ -15,8 +15,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
-        ref: feature/awesome-feature  # Specify the branch you want to check out
+      #with:
+        #ref: feature/awesome-feature  # Specify the branch you want to check out
 
     - name: Setup Node.js
       uses: actions/setup-node@v2
