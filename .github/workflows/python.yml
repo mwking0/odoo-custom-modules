@@ -25,6 +25,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # If you have any requirements, specify them in 'requirements.txt'
         pip install pytest
+
+    - name: Run unittest
+      run: python -m unittest discover
       
+
     - name: Run Tests
       run: pytest  # This assumes you have a pytest configuration in your project
